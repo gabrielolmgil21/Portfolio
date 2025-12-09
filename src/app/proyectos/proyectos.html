@@ -1,5 +1,5 @@
-<div class="h-100 flex items-center">
-<div class="relative w-400 mx-auto overflow-hidden rounded-sm ">
+<div class="h-100 flex items-center m-20 p-10 rounded-sm">
+<div class="relative w-400 overflow-hidden rounded-sm ">
   <div class="flex transition-transform duration-500 gap-4" [style.transform]="transform">
     <img *ngFor="let imagen of imagenes"
          [src]="imagen"
@@ -8,12 +8,12 @@
     />
   </div>
   <button (click)="prev()"
-          class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded-full hover:bg-black/60">
+          class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 border-2 cursor-pointer rounded-sm hover:bg-black/60">
     &#10094;
   </button>
 
   <button (click)="next()"
-          class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 rounded-full hover:bg-black/60">
+          class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 text-white px-3 py-2 border-2 cursor-pointer rounded-sm hover:bg-black/60">
     &#10095;
   </button>
 </div>
